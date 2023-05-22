@@ -1,0 +1,156 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    /* border-bottom: 1px solid #444; */
+    z-index: 999;
+}
+
+.header .top_bars {
+    display: flex;
+    line-height: 80px;
+    color: #fff;
+
+}
+
+.header .gnb {
+    margin: 0 0 0 60px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .service {
+    margin-left: auto;
+}
+
+.header .service>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.itm {
+    position: relative;
+    height: 900px;
+}
+
+.itm01 {
+    background: url(../images/genesis-kr-main-hero-gv80-230510-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm02 {
+    background: url(../images/genesis-kr-main-key-visual-g80-23my-01-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm03 {
+    background: url(../images/genesis-kr-main-key-visual-gv60-23my-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm04 {
+    background: url(../images/genesis-main-key-visual-g70-23my-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm05 {
+    background: url(../images/genesis-main-keyvisual-electrified-g80-23my-main-hero-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm06 {
+    background: url(../images/genesis-main-keyvisual-electrified-gv70-main-hero-01-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm07 {
+    background: url(../images/genesis-main-keyvisual-g70-shooting-brake-hero-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.itm08 {
+    background: url(../images/genesis-main-keyvisual-gv80-coupe-concept-main-hero-desktop-2560x900.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* z-index: 999; */
+}
+
+.mainVisual .slick-dots {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .slick-dots>* {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.mainVisual .slick-dots li button {
+    padding: 3px;
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent
+}
+
+.mainVisual .slick-dots li.slick-active button {
+    border-color: #fff;
+    padding: 4px;
+    background-color: transparent;
+}
+
+
+.itm .slogan {
+    width: 1200px;
+    padding: 0 15px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+
+
+    color: #fff;
+}
+
+.itm .slogan span {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.itm .slogan h2 {
+    font-size: 70px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.itm .slogan p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.service_bar {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+.service_bar>ul {
+    display: flex;
+    font-size: 40px;
+    gap: 40px;
+    padding: 10px;
+}
