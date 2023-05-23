@@ -1,11 +1,18 @@
 $(function () {
     $('.mainSlide').slick({
-        arrow: false,
+        arrows: false,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         pauseOnHover: false,
         draggable: true,
+    });
+
+    $('.play').on('click', function () {
+        $('.mainSlide').slick('slickPlay');
+    });
+    $('.pause').on('click', function () {
+        $('.mainSlide').slick('slickPause');
     });
 
     $(window).on('scroll', function () {
@@ -13,10 +20,14 @@ $(function () {
         let sct = $(window).scrollTop()
         console.log(sct);
         if (sct > 0) {
-            $('#header').addClass('on')
+            $('.header').addClass('on')
         } else {
-            $('#header').removeClass('on')
+            $('.header').removeClass('on')
         }
 
     });
-})
+
+});
+
+
+
