@@ -112,6 +112,15 @@ header.on {
     background-color: transparent;
 }
 
+.mainVisual .to_bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 30px;
+}
+
 
 .itm .slogan {
     max-width: 1200px;
@@ -215,7 +224,7 @@ header.on {
 
 .mainContent {
     position: relative;
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .mainContent h2 {
@@ -241,11 +250,17 @@ header.on {
     border-bottom: 1px solid #fff;
     margin: 10px 0;
     line-height: 30px;
+    position: relative;
 }
 
 .mainContent a::after {
-    content: "";
+    content: "\e941";
+    font-family: xeicon;
     color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 16px;
 
 }
 
@@ -326,12 +341,21 @@ header.on {
     background: #111;
     font-size: 16px;
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     border: 1px solid #fff;
     width: 280px;
     line-height: 40px;
-
+    cursor: pointer;
+    transition: 0.5s;
 }
+
+.mainContent .car button:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+
 
 
 
@@ -375,10 +399,177 @@ header.on {
     border: 1px solid #fff;
     padding: 10px 40px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .fixed .inner .btn:hover {
     background: #fff;
     color: #151515;
 
+}
+
+.more_event {
+    padding: 120px 0 0 0;
+}
+
+.more_event .inner {
+    display: flex;
+}
+
+.more_event figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.more_event figure img {
+    flex: 1;
+    height: 450px;
+
+}
+
+.more_event figure .cover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    /* 아래쪽 방향 배치 */
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 50px 30px;
+    transition: 0.5s;
+
+}
+
+.more_event figure:hover .cover {
+    visibility: visible;
+    top: 0;
+}
+
+.more_event figure .cover h3 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.more_event figure .cover p {
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.more_event figure .cover span {
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    text-decoration: underline;
+}
+
+.awards {
+    padding: 150px 0;
+    position: relative;
+}
+
+.awards h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 40px 0;
+}
+
+.awards_content .con {
+    position: relative;
+}
+
+.awards_content .con .text {
+    position: absolute;
+    bottom: 120px;
+    left: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    width: 300px;
+    height: 200px;
+}
+
+.awards_content .con .text strong {
+    font-size: 25px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.awards_content .con .text p {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.awards .dots {
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: rgba(255, 255, 255, 0.7);
+    user-select: none;
+    display: flex;
+    width: 1170px;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.awards .dots li {
+    position: relative;
+    flex: 1;
+    padding: 10px 15px
+}
+
+.awards .dots li::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+}
+
+.awards .dots li.on::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.awards .dots li.on {
+    color: #fff;
+}
+
+
+.awards .dots li {
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.footer {
+    background: #444;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .top {
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+}
+
+.footer address {
+    line-height: 40px;
+}
+
+.footer .top strong {
+    font-size: 30px;
+    font-weight: 500;
+    color: #5ad3c0;
 }
