@@ -489,7 +489,7 @@ header.on {
 
 .awards_content .con .text {
     position: absolute;
-    bottom: 120px;
+    bottom: 150px;
     left: 50px;
     color: rgba(255, 255, 255, 0.8);
     width: 300px;
@@ -504,8 +504,9 @@ header.on {
 }
 
 .awards_content .con .text p {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 100;
+    line-height: 20px;
 }
 
 .awards .dots {
@@ -554,22 +555,88 @@ header.on {
 }
 
 .footer {
-    background: #444;
-    color: #fff;
+    background: #1e1e1e;
+    color: #ddd;
+
+}
+
+.footer .customer {
+    line-height: 40px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    padding: 50px 0;
+}
+
+.footer .customer>* {
+    flex: 1;
+}
+
+.footer .customer h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.footer .customer ul>li {
+    font-size: 13px;
+}
+
+.footer .customer .footer address {
+    line-height: 50px;
+
+}
+
+.footer .address {
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
     text-align: center;
+    margin: 15px 0;
+    border-bottom: 1px solid #333;
+    padding: 0 0 10px 0;
 }
 
-.footer .top {
-    line-height: 40px;
-    border-bottom: 1px solid #555;
+.footer .address .menual {
+    display: flex;
+    font-size: 13px;
+    gap: 30px;
+
 }
 
-.footer address {
-    line-height: 40px;
+.footer .address .menual>li~li {
+    position: relative;
 }
 
-.footer .top strong {
+.footer .address .menual>li~li::before {
+    content: "";
+    height: 10px;
+    width: 1px;
+    background: #333;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+
+}
+
+.footer .address .brand {
+    display: flex;
     font-size: 30px;
-    font-weight: 500;
-    color: #5ad3c0;
+    gap: 30px;
+    vertical-align: middle;
+}
+
+.footer .copyright {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.footer .copyright img {
+    width: 100px;
+    margin: 0 0 20px 0;
+}
+
+.footer .copyright p {
+    font-size: 14px;
 }
